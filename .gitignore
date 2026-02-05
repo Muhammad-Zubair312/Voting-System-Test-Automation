@@ -7,3 +7,4 @@ build/
 *.log
 .DS_Store
 robot-tests/Testing\ Video/Testing\ Complete\ Video.mp4 
+*.mp4 
