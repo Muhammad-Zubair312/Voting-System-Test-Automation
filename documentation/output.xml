@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4 (Python 3.13.7 on win32)" generated="2025-12-14T11:19:43.513571" rpa="false" schemaversion="5">
+<suite id="s1" name="Voting-System-Tests" source="D:\8th Semester\1. Software Quality Engineering\online-voting-system\robot-tests\voting-system-tests.robot">
+<kw name="Open Browser To Voting System" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-14T11:19:44.079412" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000'.</msg>
+<msg time="2025-12-14T11:24:44.354481" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-12-14T11:24:44.356026" level="FAIL">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-12-14T11:19:44.078590" elapsed="300.463899">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2025-12-14T11:24:44.544565" elapsed="0.000185"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" start="2025-12-14T11:24:44.545065" elapsed="0.000061"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>css:[data-testid="tab-login"]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-12-14T11:24:44.545400" elapsed="0.000060"/>
+</kw>
+<status status="FAIL" start="2025-12-14T11:19:44.075398" elapsed="300.470583">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</kw>
+<test id="s1-t1" name="RF-TC-001: Verify Registration Form Elements" line="64">
+<tag>Functional</tag>
+<tag>Registration</tag>
+<tag>UI</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.546504" elapsed="0.002007">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t2" name="RF-TC-002: Successful User Registration" line="71">
+<tag>Functional</tag>
+<tag>Positive</tag>
+<tag>Registration</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.551281" elapsed="0.000876">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t3" name="RF-TC-003: Registration With Empty Fields" line="78">
+<tag>Functional</tag>
+<tag>Negative</tag>
+<tag>Registration</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.553484" elapsed="0.000539">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t4" name="RF-TC-004: Registration With Password Mismatch" line="85">
+<tag>Functional</tag>
+<tag>Negative</tag>
+<tag>Registration</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.554677" elapsed="0.000421">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t5" name="RF-TC-005: Registration With Short Password" line="97">
+<tag>Functional</tag>
+<tag>Negative</tag>
+<tag>Registration</tag>
+<tag>Security</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.555751" elapsed="0.012439">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t6" name="RF-TC-006: Registration With Duplicate Email" line="109">
+<tag>DataValidation</tag>
+<tag>Functional</tag>
+<tag>Negative</tag>
+<tag>Registration</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.569063" elapsed="0.000440">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t7" name="RF-TC-007: Registration With Duplicate Student ID" line="126">
+<tag>DataValidation</tag>
+<tag>Functional</tag>
+<tag>Negative</tag>
+<tag>Registration</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.570131" elapsed="0.000423">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t8" name="RF-TC-008: Verify Login Form Elements" line="145">
+<tag>Functional</tag>
+<tag>Login</tag>
+<tag>UI</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.571512" elapsed="0.000510">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t9" name="RF-TC-009: Successful User Login" line="151">
+<tag>Functional</tag>
+<tag>Login</tag>
+<tag>Positive</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.574611" elapsed="0.000656">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t10" name="RF-TC-010: Login With Invalid Credentials" line="159">
+<tag>Functional</tag>
+<tag>Login</tag>
+<tag>Negative</tag>
+<tag>Security</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.576108" elapsed="0.000577">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t11" name="RF-TC-011: Login With Empty Credentials" line="168">
+<tag>Functional</tag>
+<tag>Login</tag>
+<tag>Negative</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.577968" elapsed="0.000900">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t12" name="RF-TC-012: Successful Logout" line="174">
+<tag>Functional</tag>
+<tag>Login</tag>
+<tag>Positive</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.579959" elapsed="0.000771">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t13" name="RF-TC-013: View Active Elections After Login" line="187">
+<tag>Functional</tag>
+<tag>Positive</tag>
+<tag>Voting</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.581819" elapsed="0.001160">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t14" name="RF-TC-014: Cast Vote Successfully" line="195">
+<tag>Critical</tag>
+<tag>Functional</tag>
+<tag>Positive</tag>
+<tag>Voting</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.583946" elapsed="0.000555">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t15" name="RF-TC-015: Prevent Duplicate Voting" line="206">
+<tag>Critical</tag>
+<tag>Functional</tag>
+<tag>Negative</tag>
+<tag>Security</tag>
+<tag>Voting</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.585396" elapsed="0.000568">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t16" name="RF-TC-016: Vote In Multiple Elections" line="218">
+<tag>Functional</tag>
+<tag>Positive</tag>
+<tag>Voting</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.586761" elapsed="0.000649">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t17" name="RF-TC-017: View Election Details" line="239">
+<tag>Functional</tag>
+<tag>UI</tag>
+<tag>Voting</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.588124" elapsed="0.000717">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t18" name="RF-TC-018: View Results Page" line="251">
+<tag>Functional</tag>
+<tag>Positive</tag>
+<tag>Results</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.589938" elapsed="0.000673">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t19" name="RF-TC-019: Verify Vote Count Display" line="263">
+<tag>DataValidation</tag>
+<tag>Functional</tag>
+<tag>Results</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.591627" elapsed="0.000497">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t20" name="RF-TC-020: Verify Percentage Calculation" line="274">
+<tag>DataValidation</tag>
+<tag>Functional</tag>
+<tag>Results</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.592886" elapsed="0.001303">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t21" name="RF-TC-021: Verify Results Update After Vote" line="286">
+<tag>Critical</tag>
+<tag>DataValidation</tag>
+<tag>Functional</tag>
+<tag>Results</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.595162" elapsed="0.000678">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t22" name="RF-TC-022: Validate Email Format" line="303">
+<tag>DataValidation</tag>
+<tag>Registration</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.596580" elapsed="0.000399">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t23" name="RF-TC-023: Validate Student ID Format" line="314">
+<tag>DataValidation</tag>
+<tag>Registration</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.597792" elapsed="0.000498">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t24" name="RF-TC-024: Validate Data Persistence" line="321">
+<tag>DataValidation</tag>
+<tag>Storage</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.599126" elapsed="0.000675">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t25" name="RF-TC-025: Validate Session Persistence" line="328">
+<tag>DataValidation</tag>
+<tag>Session</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.600362" elapsed="0.000342">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t26" name="RF-TC-026: Verify Authentication Required For Voting" line="337">
+<tag>Critical</tag>
+<tag>Security</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.601245" elapsed="0.000349">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t27" name="RF-TC-027: Verify Authentication Required For Results" line="342">
+<tag>Critical</tag>
+<tag>Security</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.602128" elapsed="0.000337">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t28" name="RF-TC-028: Verify Password Minimum Length" line="346">
+<tag>Registration</tag>
+<tag>Security</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.603269" elapsed="0.000730">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t29" name="RF-TC-029: Verify Logout Clears Session" line="358">
+<tag>Critical</tag>
+<tag>Security</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.604979" elapsed="0.000544">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t30" name="RF-TC-030: Verify Vote Integrity" line="367">
+<tag>Critical</tag>
+<tag>Security</tag>
+<tag>Voting</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.606389" elapsed="0.000466">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t31" name="RF-TC-031: Verify Page Title And Branding" line="383">
+<tag>UI</tag>
+<tag>UX</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.607994" elapsed="0.000850">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t32" name="RF-TC-032: Verify Navigation Tabs Functionality" line="388">
+<tag>UI</tag>
+<tag>UX</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.609708" elapsed="0.000590">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t33" name="RF-TC-033: Verify Footer Information" line="395">
+<tag>UI</tag>
+<tag>UX</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.611267" elapsed="0.000520">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t34" name="RF-TC-034: Verify Error Messages Display" line="401">
+<tag>UI</tag>
+<tag>UX</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.612674" elapsed="0.000500">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t35" name="RF-TC-035: Verify Success Feedback" line="408">
+<tag>UI</tag>
+<tag>UX</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.614050" elapsed="0.000451">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t36" name="RF-TC-036: Verify Page Load Time" line="413">
+<tag>Performance</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.615260" elapsed="0.000407">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t37" name="RF-TC-037: Verify Responsive Design" line="422">
+<tag>Performance</tag>
+<tag>UI</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.616483" elapsed="0.000407">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t38" name="RF-TC-038: Complete User Journey Integration Test" line="429">
+<tag>Critical</tag>
+<tag>E2E</tag>
+<tag>Integration</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.617733" elapsed="0.000430">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t39" name="RF-TC-039: Multi-User Voting Integration" line="445">
+<tag>Critical</tag>
+<tag>Integration</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.618897" elapsed="0.000374">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<test id="s1-t40" name="RF-TC-040: Data Consistency Integration Test" line="467">
+<tag>DataValidation</tag>
+<tag>Integration</tag>
+<status status="FAIL" start="2025-12-14T11:24:44.620022" elapsed="0.000405">Parent suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-12-14T11:24:44.621629" elapsed="0.000425"/>
+</kw>
+<doc>Robot Framework Test Suite for Online Voting System
+Author: Hasnain Rasheed (BSEF22M519)
+This suite covers functional testing, data validation, and security checks</doc>
+<status status="FAIL" start="2025-12-14T11:19:43.515519" elapsed="301.106613">Suite setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="40" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="9" skip="0">Critical</stat>
+<stat pass="0" fail="10" skip="0">DataValidation</stat>
+<stat pass="0" fail="1" skip="0">E2E</stat>
+<stat pass="0" fail="21" skip="0">Functional</stat>
+<stat pass="0" fail="3" skip="0">Integration</stat>
+<stat pass="0" fail="5" skip="0">Login</stat>
+<stat pass="0" fail="8" skip="0">Negative</stat>
+<stat pass="0" fail="2" skip="0">Performance</stat>
+<stat pass="0" fail="7" skip="0">Positive</stat>
+<stat pass="0" fail="10" skip="0">Registration</stat>
+<stat pass="0" fail="4" skip="0">Results</stat>
+<stat pass="0" fail="8" skip="0">Security</stat>
+<stat pass="0" fail="1" skip="0">Session</stat>
+<stat pass="0" fail="1" skip="0">Storage</stat>
+<stat pass="0" fail="9" skip="0">UI</stat>
+<stat pass="0" fail="5" skip="0">UX</stat>
+<stat pass="0" fail="6" skip="0">Voting</stat>
+</tag>
+<suite>
+<stat name="Voting-System-Tests" id="s1" pass="0" fail="40" skip="0">Voting-System-Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,89 @@
+name: Voting System Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  cypress-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: |
+          cd voting-system
+          npm install
+      
+      - name: Start application
+        run: |
+          cd voting-system
+          npm start &
+          npx wait-on http://localhost:3000
+      
+      - name: Run Cypress tests
+        uses: cypress-io/github-action@v5
+        with:
+          working-directory: voting-system
+          wait-on: 'http://localhost:3000'
+      
+      - name: Upload Cypress screenshots
+        uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: voting-system/cypress/screenshots
+      
+      - name: Upload Cypress videos
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: cypress-videos
+          path: voting-system/cypress/videos
+
+  robot-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      
+      - name: Install Robot Framework
+        run: |
+          pip install robotframework
+          pip install robotframework-seleniumlibrary
+          pip install webdriver-manager
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Install and start application
+        run: |
+          cd voting-system
+          npm install
+          npm start &
+          npx wait-on http://localhost:3000
+      
+      - name: Run Robot Framework tests
+        run: |
+          cd robot-tests
+          robot --outputdir results voting-system-tests.robot
+      
+      - name: Upload Robot Framework results
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: robot-results
+          path: robot-tests/results
